@@ -1,0 +1,1526 @@
+!SESSION 2014-07-28 16:57:49.487 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-07-28 16:58:12.906
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-07-28 16:58:12.906
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@26c42804),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@26c42804)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@26c42804),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@26c42804)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-07-28 16:58:14.417
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-07-28 16:58:14.418
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-07-28 16:58:14.698
+!MESSAGE Result of converting legacy STS 2.x workspace preferences to 3.x
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-07-28 16:58:14.698
+!MESSAGE Converted legacy STS plugin preferences
+!SUBENTRY 1 unknown 0 0 2014-07-28 16:58:14.698
+!MESSAGE OK
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-07-28 16:58:14.698
+!MESSAGE Converted legacy Roo plugin state locations
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2014-07-28 16:58:14.698
+!MESSAGE Converted legacy STS plugin state locations
+
+!ENTRY org.codehaus.groovy.eclipse.dsl 4 0 2014-07-28 16:59:18.963
+!MESSAGE \\userfiles.soton.ac.uk\Users\kn\.groovy\greclipse\global_dsld_support does not exist
+!STACK 1
+Java Model Exception: Java Model Status [\\userfiles.soton.ac.uk\Users\kn\.groovy\greclipse\global_dsld_support does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:526)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.Openable.open(Openable.java:432)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob$DSLDResourceVisitor.findDSLDsInLibraries(RefreshDSLDJob.java:135)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob$DSLDResourceVisitor.findFiles(RefreshDSLDJob.java:96)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob.refreshProject(RefreshDSLDJob.java:379)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob.run(RefreshDSLDJob.java:317)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2014-07-28 16:59:18.964
+!MESSAGE \\userfiles.soton.ac.uk\Users\kn\.groovy\greclipse\global_dsld_support does not exist
+
+!ENTRY org.codehaus.groovy.eclipse.dsl 4 0 2014-07-28 16:59:18.966
+!MESSAGE C:\springsource_3_8_2\ggts-3.4.0.RELEASE\plugins\org.codehaus.groovy_2.0.7.xx-20130828-1400-e42-RELEASE\plugin_dsld_support\ does not exist
+!STACK 1
+Java Model Exception: Java Model Status [C:\springsource_3_8_2\ggts-3.4.0.RELEASE\plugins\org.codehaus.groovy_2.0.7.xx-20130828-1400-e42-RELEASE\plugin_dsld_support\ does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:526)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.Openable.open(Openable.java:432)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob$DSLDResourceVisitor.findDSLDsInLibraries(RefreshDSLDJob.java:135)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob$DSLDResourceVisitor.findFiles(RefreshDSLDJob.java:96)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob.refreshProject(RefreshDSLDJob.java:379)
+	at org.codehaus.groovy.eclipse.dsl.RefreshDSLDJob.run(RefreshDSLDJob.java:317)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2014-07-28 16:59:18.966
+!MESSAGE C:\springsource_3_8_2\ggts-3.4.0.RELEASE\plugins\org.codehaus.groovy_2.0.7.xx-20130828-1400-e42-RELEASE\plugin_dsld_support\ does not exist
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-07-28 17:05:04.086
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-07-28 17:05:04.086
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6d920308,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@77aa89eb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@26c42804)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@d053a6b,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@77aa89eb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@26c42804)),sourcePriority=1064960)
+!SESSION 2014-08-05 16:58:00.323 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-08-05 16:58:50.061
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-08-05 16:58:50.061
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7b7d8769),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7b7d8769)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7b7d8769),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7b7d8769)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-08-05 16:59:08.596
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-08-05 16:59:08.597
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-08-05 16:59:38.343
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-08-05 16:59:38.343
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@741ec391,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@3e677646),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7b7d8769)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@fb9a026,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@3e677646),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7b7d8769)),sourcePriority=1064960)
+!SESSION 2014-09-03 09:19:08.175 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-03 09:24:23.979
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-03 09:24:23.979
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@31987298),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@31987298)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@31987298),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@31987298)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-03 09:24:28.387
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-03 09:24:28.388
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-03 09:27:59.936
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-03 09:27:59.937
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@ccd26df,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@74e0e49f),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@31987298)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@70b30109,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@74e0e49f),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@31987298)),sourcePriority=1064960)
+!SESSION 2014-09-09 12:20:20.251 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-09 12:21:31.151
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-09 12:21:31.151
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7cf3e133),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7cf3e133)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7cf3e133),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7cf3e133)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-09 12:21:34.529
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-09 12:21:34.530
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-09 16:08:57.515
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-09 16:08:57.515
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@6fa36381,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@66a0ba6c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7cf3e133)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@4fd9e369,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@66a0ba6c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7cf3e133)),sourcePriority=1064960)
+!SESSION 2014-09-15 09:54:44.919 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-15 09:55:58.764
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-15 09:55:58.764
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2bf87baf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2bf87baf)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2bf87baf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2bf87baf)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-15 09:56:02.665
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-15 09:56:02.666
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-15 09:57:39.634
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-15 09:57:39.634
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@53af9452,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@3add750e),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2bf87baf)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@2c32be6a,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@3add750e),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2bf87baf)),sourcePriority=1064960)
+!SESSION 2014-10-15 16:25:11.075 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-10-15 16:26:10.584
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-10-15 16:26:10.584
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@44a64a92),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@44a64a92)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@44a64a92),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@44a64a92)),sourcePriority=16640)
+
+!ENTRY org.eclipse.osgi 2 0 2014-10-15 16:26:13.729
+!MESSAGE While loading class "org.codehaus.groovy.eclipse.dsl.classpath.DSLDContainerInitializer", thread "Thread[Text Viewer Hover Presenter,1,main]" timed out waiting (3ms) for thread "Thread[Worker-3,5,main]" to finish starting bundle "org.codehaus.groovy.eclipse.dsl_2.9.0.xx-20130828-1400-e42-RELEASE [90]". To avoid deadlock, thread "Thread[Text Viewer Hover Presenter,1,main]" is proceeding but "org.codehaus.groovy.eclipse.dsl.classpath.DSLDContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.codehaus.groovy.eclipse.dsl_2.9.0.xx-20130828-1400-e42-RELEASE.jar" by thread "Worker-3".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3175)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3151)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2832)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1880)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3128)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2698)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2862)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1967)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:466)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:526)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1646)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2334)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2344)
+	at org.eclipse.jdt.internal.core.JavaProject.findType(JavaProject.java:1362)
+	at org.eclipse.jdt.internal.core.JavaProject.findType(JavaProject.java:1269)
+	at org.eclipse.jst.jsp.ui.internal.taginfo.XMLJavadocHoverProcessor.getHoverInfo(XMLJavadocHoverProcessor.java:106)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 41 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3175)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3151)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2832)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1880)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3128)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2698)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2862)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1967)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:466)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:258)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:526)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:255)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:241)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1646)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2334)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2344)
+	at org.eclipse.jdt.internal.core.JavaProject.findType(JavaProject.java:1362)
+	at org.eclipse.jdt.internal.core.JavaProject.findType(JavaProject.java:1269)
+	at org.eclipse.jst.jsp.ui.internal.taginfo.XMLJavadocHoverProcessor.getHoverInfo(XMLJavadocHoverProcessor.java:106)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-15 16:26:14.720
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-15 16:26:14.721
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-10-15 16:29:53.673
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-10-15 16:29:53.673
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@71104ed4,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@52c62074),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@44a64a92)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@65a77a49,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@52c62074),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@44a64a92)),sourcePriority=1064960)
+!SESSION 2014-10-16 15:13:51.717 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-10-16 15:14:26.872
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-10-16 15:14:52.958
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-10-16 15:14:52.959
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@17be3bb2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@17be3bb2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@17be3bb2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@17be3bb2)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-16 15:14:57.420
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-16 15:14:57.421
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-10-16 15:16:23.649
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-10-16 15:16:23.649
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@17c2f074,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@2c179360),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@17be3bb2)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@7f385bdb,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@2c179360),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@17be3bb2)),sourcePriority=1064960)
+!SESSION 2014-10-30 14:46:42.003 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-10-30 14:47:50.169
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-10-30 14:47:50.169
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@171fcdde),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@171fcdde)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@171fcdde),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@171fcdde)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-30 14:48:03.673
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-30 14:48:03.673
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-10-30 14:49:46.513
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-10-30 14:49:46.513
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@1e41c945,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@32f41b31),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@171fcdde)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@7104e087,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@32f41b31),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@171fcdde)),sourcePriority=1064960)
+!SESSION 2018-07-10 11:58:04.631 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2018-07-10 11:59:18.595
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-07-10 11:59:18.595
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@280c3c44),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@280c3c44)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@280c3c44),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@280c3c44)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-07-10 11:59:25.830
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-07-10 11:59:25.866
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-07-10 11:59:48.539
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:171)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:95)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:160)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:143)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:91)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:101)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:241)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:98)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2018-07-10 11:59:48.540
+!MESSAGE No repository found at http://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2018-07-10 11:59:53.966
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2018-07-10 11:59:53.966
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.966
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.967
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2018-07-10 11:59:53.974
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2018-07-10 11:59:53.974
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.974
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.974
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.974
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.974
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.974
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.975
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 11:59:53.976
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE
+!SESSION 2018-07-10 15:13:12.572 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2018-07-10 15:13:58.021
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2018-07-10 15:13:58.021
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@17e319a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@17e319a)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@17e319a),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@17e319a)),sourcePriority=16640)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-07-10 15:14:23.172
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:171)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:95)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:160)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:143)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:91)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:101)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:241)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:98)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2018-07-10 15:14:23.174
+!MESSAGE No repository found at http://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2018-07-10 15:14:28.550
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2018-07-10 15:14:28.550
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.550
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.551
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2018-07-10 15:14:28.552
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2018-07-10 15:14:28.552
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.552
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.552
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.552
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.552
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.552
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.553
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.554
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.554
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.554
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2018-07-10 15:14:28.554
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-07-10 15:14:29.545
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-07-10 15:14:29.546
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-08-14 10:10:59.765 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2019-08-14 10:12:10.957
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2019-08-14 10:12:10.957
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@738bf6bf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@738bf6bf)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@738bf6bf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@738bf6bf)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-14 10:12:18.509
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-14 10:12:18.510
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2019-08-14 10:12:48.497
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:171)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:95)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:160)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:143)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:91)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:101)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:241)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:98)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2019-08-14 10:12:48.498
+!MESSAGE No repository found at https://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-08-14 10:12:55.048
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-08-14 10:12:55.048
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.048
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.049
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-08-14 10:12:55.050
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-08-14 10:12:55.050
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.050
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-14 10:12:55.051
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE
+
+!ENTRY org.eclipse.ui.workbench 2 0 2019-08-14 10:13:36.895
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2019-08-14 10:13:36.895
+!MESSAGE Conflict for 'org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@3876e500,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@35563b4b),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@738bf6bf)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu,
+	handler=org.eclipse.jdt.internal.ui.actions.JDTQuickMenuCreator$1@5b47ff6,
+	expression=AndExpression(ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@35563b4b),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@738bf6bf)),sourcePriority=1064960)
+!SESSION 2019-08-29 10:06:13.276 -----------------------------------------------
+eclipse.buildId=3.4.0.201310051818-RELEASE-e38
+java.version=1.6.0_33
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2019-08-29 10:08:37.774
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2019-08-29 10:08:37.774
+!MESSAGE Conflict for 'AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action':
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2555e3ab),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2555e3ab)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.springsource.ide.eclipse.commons.launch.actionSet/org.springsource.ide.eclipse.commons.launch.relaunch.action,
+	handler=ActionDelegateHandlerProxy(null,org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate),
+	expression=AndExpression(ActionSetExpression(org.springsource.ide.eclipse.commons.launch.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2555e3ab),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2555e3ab)),sourcePriority=16640)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-29 10:08:43.896
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-08-29 10:08:43.896
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2019-08-29 10:09:05.755
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:393)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:171)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:95)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:758)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:651)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:160)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:143)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:91)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:101)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:241)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:98)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2019-08-29 10:09:05.756
+!MESSAGE No repository found at https://download.springsource.com/release/TOOLS/update/3.6.3.SR1/e3.8/.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-08-29 10:09:10.776
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-08-29 10:09:10.776
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.776
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.777
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-08-29 10:09:10.778
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-08-29 10:09:10.778
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.778
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.core,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.insight.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.livegraph,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.reloading,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,com.vmware.vfabric.ide.eclipse.tcserver.ui,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.groovy,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.editor.gsp,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.explorer,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.core,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.groovy.debug.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.maven,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.refactoring,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.resources,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runonserver,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime.shared,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime13,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.runtime22,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.search,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.grails.ide.eclipse.ui,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springframework.ide.eclipse.uaa,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.configurator,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.content.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.core,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.frameworks.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.gettingstarted,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.livexp,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.quicksearch,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.dashboard.ui,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.vmware.vfabric.ide.eclipse.tcserver.insight,3.6.3.201411271101-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.grails.ide.eclipse,3.6.3.201411271013-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springframework.ide.eclipse.uaa.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.779
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts,3.6.3.201411281415-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: binary,org.springsource.ggts.ide.executable.win32.win32.x86_64,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ggts.package,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: binary,org.springsource.ggts.package_root,3.6.3.201411281415-RELEASE-e38
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.browser,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: osgi.bundle,org.springsource.ide.eclipse.commons.completions,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.commons.quicksearch.feature,3.6.3.201411271002-RELEASE
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2019-08-29 10:09:10.780
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.springsource.ide.eclipse.dashboard,3.6.3.201411271002-RELEASE

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+  <urn:Campaign xmlns:urn="urn:sungardhe:relate:campaign:1.0">
+    <urn:DesignStatus>Development</urn:DesignStatus>
+    <urn:Name>201920_Mark_Release_Presessional</urn:Name>
+    <urn:Description>PRJTASK0547732 - Marks release for pre-sessional students, 6th September 2019</urn:Description>
+    <urn:StatedGoal>201920 Presessional Mark Release executed on 6th Sep 2019</urn:StatedGoal>
+    <urn:AdministratorRole>
+      <urn:role-named-ref>Admin</urn:role-named-ref>
+    </urn:AdministratorRole>
+    <urn:population-named-ref>
+      <urn:Name>201920_Mark_Release_Presessional_Course_B_Pop</urn:Name>
+      <urn:Owner>brmuser</urn:Owner>
+    </urn:population-named-ref>
+    <urn:CampaignModel>
+      <urn:ContextParameters/>
+      <urn:Nodes>
+        <urn:StartNode key="0">
+          <urn:Location x="20" y="89"/>
+          <urn:Name>Start</urn:Name>
+          <urn:Description>Start</urn:Description>
+          <urn:Transitions>
+            <urn:Transition targetKey="1">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+        </urn:StartNode>
+        <urn:StopNode key="2">
+          <urn:Location x="428" y="89"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_1</urn:Name>
+          <urn:Description>End</urn:Description>
+        </urn:StopNode>
+        <urn:MCCActivity key="1">
+          <urn:Location x="110" y="84"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="255" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Mark_Release_Presessional_201920</urn:Name>
+          <urn:Description>PRJTASK0547732 - 201920 Marks Release Presessional</urn:Description>
+          <urn:Transitions>
+            <urn:Transition targetKey="2">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Exams, Awards &amp; Graduation</urn:folder-named-ref>
+            <urn:TemplateName>201920_Marks_Release_Presessionals</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+      </urn:Nodes>
+    </urn:CampaignModel>
+  </urn:Campaign>
+  <urn:Population xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201920_Mark_Release_Presessional_Course_B_Pop</urn:Name>
+    <urn:Description>PRJTASK0547732 - Marks release for pre-sessional students, 6th September 2019</urn:Description>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExecutionContext>
+      <urn:ExpressionName>201920_Mark_Release_Presessional_Course_B</urn:ExpressionName>
+    </urn:ExecutionContext>
+  </urn:Population>
+  <urn:Expression xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201920_Mark_Release_Presessional_Course_B</urn:Name>
+    <urn:Description>PRJTASK0547732 - Marks release for pre-sessional students, 6th September 2019</urn:Description>
+    <urn:Application>Relate</urn:Application>
+    <urn:Creator>brmuser</urn:Creator>
+    <urn:RawSql>true</urn:RawSql>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExpressionDefinition>
+      <urn:XmlExpression>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;Expression xmlns="urn:com.sungardhe.common.services.selection.querygenerator"&gt;&lt;DatabaseColumnName&gt;SPRIDEN_PIDM&lt;/DatabaseColumnName&gt;&lt;DatabaseLocationName&gt;Student&lt;/DatabaseLocationName&gt;&lt;DataType&gt;number&lt;/DataType&gt;&lt;Subquery&gt;&lt;Statement&gt;SELECT spriden_pidm FROM sgbstdn,      spbpers,      goremal,      spriden,      sorlcur  a WHERE sgbstdn_term_code_eff = '201920'   AND sgbstdn_term_code_admit &amp;gt;= '201819'   AND  a.sorlcur_term_code = '201920' AND a.sorlcur_lmod_code = 'LEARNER'   AND a.sorlcur_cact_code = 'ACTIVE'   AND a.sorlcur_current_cde = 'Y'   AND a.sorlcur_program IN ('4291', '4292', '5083', '5084',  '6130', '8382', '8383', '8385', '8386', '8313')   AND sgbstdn_pidm = a.sorlcur_pidm   AND spbpers_pidm = a.sorlcur_pidm   AND spbpers_dead_ind IS NULL   AND goremal_pidm = a.sorlcur_pidm   AND  goremal_emal_code = 'UNI'   AND goremal_status_ind = 'A'   AND EXISTS (SELECT shrtckg_pidm               FROM shrtckg               WHERE shrtckg_pidm = a.sorlcur_pidm                 AND  shrtckg_term_code IN ('201819', '201920')                 AND shrtckg_gchg_code NOT IN ('IE', 'AU')                 AND TO_DATE (shrtckg_final_grde_chg_date) &amp;gt;= '01-AUG-2019') AND NOT EXISTS  (SELECT b.sorlcur_pidm                   FROM sorlcur b                   WHERE b.sorlcur_term_code &amp;lt; '201819'                     AND b.sorlcur_lmod_code = 'LEARNER'                     AND  b.sorlcur_pidm = a.sorlcur_pidm                     AND b.sorlcur_program IN (SELECT gtvsdax_external_code                                                FROM gtvsdax                                                WHERE gtvsdax_internal_code = 'PRSESS_CRS'                                                 AND gtvsdax_internal_code_group = 'PRSESS_CRS_CODE')) AND spriden_pidm = a.sorlcur_pidm AND  spriden_change_ind IS NULL&lt;/Statement&gt;&lt;Bindings&gt;&lt;Timestamp&gt;0&lt;/Timestamp&gt;&lt;Size&gt;0&lt;/Size&gt;&lt;/Bindings&gt;&lt;/Subquery&gt;&lt;/Expression&gt;</urn:XmlExpression>
+    </urn:ExpressionDefinition>
+  </urn:Expression>
+  <urn:CommunicationTemplate xmlns:urn="urn:sungardhe:relate:communication:1.7" personal="false">
+    <urn:Name>201920_Marks_Release_Presessionals</urn:Name>
+    <urn:Description>PRJTASK0547732 Marks Release Presessionals 6th September 2019</urn:Description>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:folder-named-ref>Exams, Awards &amp; Graduation</urn:folder-named-ref>
+    <urn:organization-named-ref>Exams Awards and Graduation</urn:organization-named-ref>
+  </urn:CommunicationTemplate>
+  <urn:CommunicationTemplateVersion xmlns:urn="urn:sungardhe:relate:communication:1.7" active="true" oneOff="false" publish="true">
+    <urn:template-named-ref>
+      <urn:folder-named-ref>Exams, Awards &amp; Graduation</urn:folder-named-ref>
+      <urn:template-named-ref>201920_Marks_Release_Presessionals</urn:template-named-ref>
+    </urn:template-named-ref>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:Version>1.0</urn:Version>
+    <urn:ValidFrom>2019-08-13T16:13:55.000+01:00</urn:ValidFrom>
+    <urn:CommunicationMethods>
+      <urn:EmailTemplate>
+        <urn:FromList>results@soton.ac.uk</urn:FromList>
+        <urn:ToList>brmdev2sent@soton.ac.uk</urn:ToList>
+        <urn:Subject>Your Module Results</urn:Subject>
+        <urn:Content>&lt;table&gt;     &lt;tbody&gt;         &lt;tr&gt;             &lt;td&gt;&lt;div style="float: right;margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;img alt="University of Southampton" src="http://www.southampton.ac.uk/static-images/logos/university/main-logo-small.png" align="right" /&gt;&lt;/div&gt;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&amp;nbsp;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&amp;nbsp;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&amp;nbsp;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&lt;div style=" margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;Dear |::=Constituent.Name Information.FirstName::|,&lt;/p&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:9pt; font-family: Arial"&gt;&lt;table summary="Results Notification Slip" width="60%"&gt;                 &lt;tbody&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Year&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;2019/20&lt;/td&gt;                     &lt;/tr&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Student Name&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;|::=Constituent.Name Information.FullName::|&lt;/td&gt;                     &lt;/tr&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Student ID&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;|::=Constituent.Identifiers.Banner ID::|&lt;/td&gt;                     &lt;/tr&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Programme Description&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;Presessional Course B&lt;/td&gt;                     &lt;/tr&gt;                 &lt;/tbody&gt;             &lt;/table&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;|::=UoS_Student.UoS Academic History - Full Term.UoS Pres Module Marks Table - Term(pterm="201718",term="201819")::|&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;table summary="Overall Module Marks" width="38%"&gt;                 &lt;tbody&gt;                     &lt;tr&gt;                         &lt;td&gt;Average mark&lt;/td&gt;                         &lt;td&gt;&amp;nbsp;&lt;/td&gt;                         &lt;td&gt;|::=UoS_Student.UoS Academic History - Full Term.UoS Pres Overall Mark(pterm="201718",term="201819")::|&lt;/td&gt;                     &lt;/tr&gt;                 &lt;/tbody&gt;             &lt;/table&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;|::=UoS_Student.UoS Academic History - Full Term.UoS Pres Overall Mark Desc(term="201819")::|&lt;/p&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;If you think your marks are incorrect, please contact  your Student Office at Avenue campus.  These results will show in your  Banner Self Service account no earlier than 12 noon on Friday 13  September.&lt;/p&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;Student and Academic Administration&lt;/p&gt;&lt;/div&gt;&lt;/td&gt;         &lt;/tr&gt;     &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;!--[CDATA[]] --&gt;</urn:Content>
+      </urn:EmailTemplate>
+    </urn:CommunicationMethods>
+    <urn:interactionCategory-named-ref>
+      <urn:interactionCategory-named-ref>E-mail</urn:interactionCategory-named-ref>
+    </urn:interactionCategory-named-ref>
+  </urn:CommunicationTemplateVersion>
+</objects>

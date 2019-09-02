@@ -1,0 +1,16 @@
+INDEX VERSION 1.126+C:\springsource_3_8_2\workspace\Karl\.metadata\.plugins\org.eclipse.jdt.core
+1020523133.index
+2072139125.index
+3619682924.index
+4001331243.index
+952004686.index
+2328269416.index
+2832191122.index
+2483646969.index
+2966805930.index
+217601449.index
+4257325822.index
+3697255385.index
+3780691377.index
+1513527537.index
+875581771.index

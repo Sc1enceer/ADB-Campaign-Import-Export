@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configurableObjectExplorer>
+    <allGroups>
+        <groups/>
+        <configurations/>
+    </allGroups>
+    <activeGroups>
+        <groups/>
+        <configurations/>
+    </activeGroups>
+    <presentationMode>HIERARCHICAL</presentationMode>
+    <rootMode>PROJECTS</rootMode>
+    <groupMode>ALPHABETIC</groupMode>
+    <extensionMode>SIMPLE</extensionMode>
+    <groupByProject>true</groupByProject>
+</configurableObjectExplorer>

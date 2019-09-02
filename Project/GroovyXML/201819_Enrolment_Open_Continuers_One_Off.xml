@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+  <urn:Campaign xmlns:urn="urn:sungardhe:relate:campaign:1.0">
+    <urn:DesignStatus>Development</urn:DesignStatus>
+    <urn:Name>201819_Enrolment_Open_Continuers_One_Off</urn:Name>
+    <urn:Description>Enrolment Open Continuers Campaign for 201718 to be run on 3rd August 2017</urn:Description>
+    <urn:AdministratorRole>
+      <urn:role-named-ref>Admin</urn:role-named-ref>
+    </urn:AdministratorRole>
+    <urn:population-named-ref>
+      <urn:Name>201819_Enrol_Open_Students_POP</urn:Name>
+      <urn:Owner>brmuser</urn:Owner>
+    </urn:population-named-ref>
+    <urn:CampaignModel>
+      <urn:ContextParameters>
+        <urn:ContextParameter required="false" type="Date">
+          <urn:Name>v_end_date</urn:Name>
+          <urn:Description/>
+          <urn:DefaultValue>
+            <urn:dateValue>2018-08-03T23:00:00.000+01:00</urn:dateValue>
+          </urn:DefaultValue>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_PIDM</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Date">
+          <urn:Name>v_system_date</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+      </urn:ContextParameters>
+      <urn:AttributeMap>
+        <urn:AttributeMapping attribute="CampaignInstance.creationDate" parameter="v_system_date"/>
+        <urn:AttributeMapping attribute="CampaignInstance.targetID" parameter="v_PIDM"/>
+      </urn:AttributeMap>
+      <urn:Nodes>
+        <urn:StartNode key="0">
+          <urn:Location x="135" y="197"/>
+          <urn:Name>Start</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="6">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+        </urn:StartNode>
+        <urn:StopNode key="7">
+          <urn:Location x="133" y="381"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_2</urn:Name>
+        </urn:StopNode>
+        <urn:StopNode key="2">
+          <urn:Location x="535" y="277"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_1</urn:Name>
+        </urn:StopNode>
+        <urn:DecisionActivity key="6">
+          <urn:Location x="135" y="284"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="255" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>DecisionNode_1</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="1">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="201" y="270"/>
+                <urn:Description>run</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_system_date &lt;= v_end_date</urn:GuardConditionRule>
+            </urn:Transition>
+            <urn:Transition targetKey="7">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="128" y="331"/>
+                <urn:Description>end date</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_system_date &gt; v_end_date</urn:GuardConditionRule>
+            </urn:Transition>
+          </urn:Transitions>
+        </urn:DecisionActivity>
+        <urn:MCCActivity key="1">
+          <urn:Location x="263" y="276"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="255" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Enrolment_Is_Open_201819</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="2">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Is_Open_201819</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+      </urn:Nodes>
+    </urn:CampaignModel>
+  </urn:Campaign>
+  <urn:Population xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201819_Enrol_Open_Students_POP</urn:Name>
+    <urn:Description>Enrollment Open for Continuing Students</urn:Description>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExecutionContext>
+      <urn:ExpressionName>201819_Enrol_Open_Students_EXP</urn:ExpressionName>
+      <urn:ExpressionBinding>
+        <urn:Name>i_TERM</urn:Name>
+        <urn:Value>201819</urn:Value>
+      </urn:ExpressionBinding>
+    </urn:ExecutionContext>
+  </urn:Population>
+  <urn:Expression xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201819_Enrol_Open_Students_EXP</urn:Name>
+    <urn:Description>Enrolment Open for Continuing Students</urn:Description>
+    <urn:Application>Relate</urn:Application>
+    <urn:Creator>brmuser</urn:Creator>
+    <urn:RawSql>true</urn:RawSql>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExpressionDefinition>
+      <urn:XmlExpression>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;Expression xmlns="urn:com.sungardhe.common.services.selection.querygenerator"&gt;&lt;DatabaseColumnName&gt;SPRIDEN_PIDM&lt;/DatabaseColumnName&gt;&lt;DatabaseLocationName&gt;Student&lt;/DatabaseLocationName&gt;&lt;DataType&gt;number&lt;/DataType&gt;&lt;Subquery&gt;&lt;Statement&gt;SELECT spriden_pidm   FROM spriden, sgbstdn, sfbetrm  WHERE     SGBSTDN.SGBSTDN_PIDM = SFBETRM.SFBETRM_PIDM        AND SGBSTDN.SGBSTDN_TERM_CODE_EFF = SFBETRM.SFBETRM_TERM_CODE        AND SGBSTDN.SGBSTDN_PIDM = SPRIDEN.SPRIDEN_PIDM        AND SGBSTDN.SGBSTDN_TERM_CODE_ADMIT &amp;lt; SGBSTDN.SGBSTDN_TERM_CODE_EFF        AND SPRIDEN.SPRIDEN_CHANGE_IND IS NULL        AND SFBETRM.SFBETRM_ESTS_CODE IN ('EL',                                          'EE',                                          'PE',                                          'RE',                                          'YE',                                          'PL',                                          'YL')        AND SGBSTDN.SGBSTDN_STST_CODE = 'AS'        AND SGBSTDN.SGBSTDN_CAMP_CODE NOT IN ('DL',                                              'EL',                                              'VT',                                              'SI',                                              'XX')        AND SGBSTDN.SGBSTDN_PROGRAM_1 NOT IN ('4326','5262')        AND SGBSTDN.SGBSTDN_PROGRAM_1 NOT IN (SELECT gtvsdax_external_code                                                FROM gtvsdax                                               WHERE     gtvsdax_internal_code_group =                                                            'PRSESS_CRS_CODE'                                                     AND gtvsdax_internal_code =                                                            'PRSESS_CRS')        AND SGBSTDN.SGBSTDN_TERM_CODE_EFF = :1        AND EXISTS               (SELECT 'true'                  FROM goremal                 WHERE     GOREMAL_PIDM = SPRIDEN.SPRIDEN_PIDM                       AND GOREMAL_STATUS_IND = 'A'                       AND GOREMAL_PREFERRED_IND = 'Y')        AND EXISTS               (SELECT 'true'                  FROM spbpers                 WHERE     SPBPERS.SPBPERS_PIDM = SPRIDEN.SPRIDEN_PIDM                       AND NVL (SPBPERS.SPBPERS_DEAD_IND, 'N') != 'Y')        AND BANINST1.FN$GET_GAINS_PREV_FYEAR (spriden_pidm, :1) &amp;lt;&amp;gt; 'Y'&lt;/Statement&gt;&lt;Bindings&gt;&lt;Timestamp&gt;0&lt;/Timestamp&gt;&lt;Size&gt;1&lt;/Size&gt;&lt;Binding&gt;&lt;Id&gt;1&lt;/Id&gt;&lt;BindingName&gt;i_TERM&lt;/BindingName&gt;&lt;Description&gt;Term&lt;/Description&gt;&lt;DataType&gt;string&lt;/DataType&gt;&lt;DataSource&gt;literal&lt;/DataSource&gt;&lt;Value&gt;201819&lt;/Value&gt;&lt;Property&gt;&lt;Name&gt;groupId&lt;/Name&gt;&lt;Value&gt;617E5B67-1D74-E2CE-2BC5-6B1C11F62E1A&lt;/Value&gt;&lt;/Property&gt;&lt;Property&gt;&lt;Name&gt;groupType&lt;/Name&gt;&lt;Value&gt;is&lt;/Value&gt;&lt;/Property&gt;&lt;/Binding&gt;&lt;/Bindings&gt;&lt;/Subquery&gt;&lt;/Expression&gt;</urn:XmlExpression>
+    </urn:ExpressionDefinition>
+  </urn:Expression>
+  <urn:CommunicationTemplate xmlns:urn="urn:sungardhe:relate:communication:1.7" personal="false">
+    <urn:Name>Enrolment_Is_Open_201819</urn:Name>
+    <urn:Description>Time to enrol email for continuers</urn:Description>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+    <urn:organization-named-ref>Enrolment</urn:organization-named-ref>
+  </urn:CommunicationTemplate>
+  <urn:Folder xmlns:urn="urn:sungardhe:relate:communication:1.7" internal="false">
+    <urn:Name>Student Record Team 201819</urn:Name>
+    <urn:Description>Student Record Team 201819</urn:Description>
+  </urn:Folder>
+  <urn:CommunicationTemplateVersion xmlns:urn="urn:sungardhe:relate:communication:1.7" active="true" oneOff="false" publish="true">
+    <urn:template-named-ref>
+      <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+      <urn:template-named-ref>Enrolment_Is_Open_201819</urn:template-named-ref>
+    </urn:template-named-ref>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:Version>1.0</urn:Version>
+    <urn:ValidFrom>2018-06-20T14:11:57.000+01:00</urn:ValidFrom>
+    <urn:ValidTo>2019-07-31T00:00:00.000+01:00</urn:ValidTo>
+    <urn:CommunicationMethods>
+      <urn:EmailTemplate>
+        <urn:FromList>enrol@soton.ac.uk</urn:FromList>
+        <urn:ToList>brmdev2@soton.ac.uk</urn:ToList>
+        <urn:Subject>University of Southampton - Enrol</urn:Subject>
+        <urn:Content>&lt;p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"&gt;&lt;span style="mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; &lt;table class="deviceWidth topheader" width="600" cellspacing="0" cellpadding="0" border="0" align="center"&gt;     &lt;tbody&gt;         &lt;tr&gt;             &lt;td valign="top" bgcolor="#002e3b" align="center"&gt;&lt;table width="601" cellspacing="0" cellpadding="0" border="0" align="center" height="112"&gt;                 &lt;tbody&gt;                     &lt;tr&gt;                         &lt;td class="em_side" width="45"&gt;&amp;nbsp;&lt;/td&gt;                         &lt;td valign="top" align="center"&gt;&lt;table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"&gt;                             &lt;tbody&gt;                                 &lt;tr&gt;                                     &lt;td class="em_height" height="30"&gt;&amp;nbsp;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td valign="top" align="left"&gt;&lt;table class="em_wrapper" cellspacing="0" cellpadding="0" border="0" align="left"&gt;                                         &lt;tbody&gt;                                             &lt;tr&gt;                                                 &lt;td valign="top" align="center"&gt;&lt;table cellspacing="0" cellpadding="0" border="0" align="center"&gt;                                                     &lt;tbody&gt;                                                         &lt;tr&gt;                                                             &lt;td valign="top" align="center"&gt;&lt;a href="http://www.southampton.ac.uk/" target="_blank" style="text-decoration:none;"&gt;&lt;img src="https://gallery.mailchimp.com/d14c4bc31e680281c5d4ef841/images/ea03ee46-e59b-41a4-ba77-7f14102f28fe.png" alt="UNIVERSITY OF Southampton" style="display:block; max-width:167px; font-family:Arial, sans-serif; font-size:22px; line-height:30px; color:#ffffff; font-weight:bold;" width="167" border="0" height="37" /&gt;&lt;/a&gt;&lt;/td&gt;                                                         &lt;/tr&gt;                                                     &lt;/tbody&gt;                                                 &lt;/table&gt;&lt;/td&gt;                                             &lt;/tr&gt;                                         &lt;/tbody&gt;                                     &lt;/table&gt;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td class="em_height" height="30"&gt;&amp;nbsp;&lt;/td&gt;                                 &lt;/tr&gt;                             &lt;/tbody&gt;                         &lt;/table&gt;&lt;/td&gt;                         &lt;td class="em_side" width="45"&gt;&amp;nbsp;&lt;/td&gt;                     &lt;/tr&gt;                 &lt;/tbody&gt;             &lt;/table&gt;&lt;/td&gt;         &lt;/tr&gt;     &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;table class="deviceWidth" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#eeeeed" align="center"&gt;     &lt;tbody&gt;         &lt;tr&gt;             &lt;td style="padding: 5px 8px 10px; text-align: left; color: rgb(102, 102, 102); line-height: 24px; font-family: &amp;quot;Lucida Sans Unicode&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, sans-serif; font-size: 15px; font-weight: normal; vertical-align: top;" bgcolor="#eeeeed"&gt;&lt;p style="text-align: center;"&gt;&lt;span style="font-family: Arial;"&gt;&lt;span style="font-size: 20pt;"&gt;Time to Enrol&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;             &lt;p style="line-height: 18pt; text-align: center;" class="MsoNormal"&gt;&lt;span style="font-family: Arial;"&gt;&lt;span style="color: rgb(102, 102, 102);"&gt;Hello |::=Constituent.Name Information.FirstName::|,&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12pt;"&gt;&lt;span style="color: rgb(102, 102, 102);"&gt;&lt;br /&gt;             &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 11.5pt; color: rgb(102, 102, 102);"&gt;&lt;br /&gt;             &lt;/span&gt;&lt;span style="font-family: Arial;"&gt;Your Student ID number   |::=Constituent.Identifiers.Banner ID::| &lt;br /&gt;             Programme:   |::=Curricula.Student Program of Study.Primary Major Description(Term="201718")::|&lt;/span&gt;&lt;/p&gt;             &lt;p style="line-height: 18pt; text-align: center;" class="MsoNormal"&gt;&lt;span style="font-family: Arial;"&gt;It's  time to enrol for the 2018/19 academic year. Our academic year starts  on 1 August so even if you have enrolled recently you will need to do so  again.&lt;/span&gt;&lt;/p&gt;&lt;p style="line-height: 18pt; text-align: center;" class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;&lt;table width="167" cellspacing="1" cellpadding="1" border="2" align="center" height="63"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;" bgcolor="#ff0000"&gt;&lt;a href="http://subscribe.soton.ac.uk/Checkepw"&gt;&lt;span style="font-family: Arial;"&gt;&lt;span style="font-size: 16pt;"&gt;&lt;span style="color: rgb(255, 255, 255);"&gt;Enrol now&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p style="line-height: 18pt; text-align: center;" class="MsoNormal"&gt;&amp;nbsp;&lt;/p&gt;                                                    &lt;p style="text-align: center;"&gt;&lt;span style="font-size: 11.5pt; color: rgb(102, 102, 102);"&gt;             &lt;/span&gt;&lt;span style="color: rgb(102, 102, 102);"&gt;Please do not respond to this email but send any queries to &lt;/span&gt;&lt;span style="color: rgb(0, 124, 146);"&gt;&lt;a title="Email:enrol@soton.ac.uk" style="color: #007c92" href="mailto:enrol@soton.ac.uk?subject=Re%3A%20Time%20To%20Enrol&amp;amp;body=Note%20from%20Enrolment%3A%20Please%20provide%20your%20Student%20ID%20number%20on%20all%20emails.%0A"&gt;&lt;span style="color: rgb(0, 124, 146);"&gt;enrol@soton.ac.uk&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;&lt;/td&gt;         &lt;/tr&gt;     &lt;/tbody&gt; &lt;/table&gt; &lt;table class="deviceWidth" width="598" cellspacing="0" cellpadding="0" border="0" align="center" height="334"&gt;     &lt;tbody&gt;         &lt;tr&gt;             &lt;td style="padding-bottom: 5px; padding-top: 5px; padding-left: 0px; padding-right: 0px" bgcolor="#363636"&gt;&lt;br /&gt;&lt;table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"&gt;                 &lt;tbody&gt;                     &lt;tr&gt;                         &lt;td class="em_side" width="50"&gt;&amp;nbsp;&lt;/td&gt;                         &lt;td valign="top" align="center"&gt;&lt;table width="488" cellspacing="0" cellpadding="0" border="0" align="center" height="262"&gt;                             &lt;tbody&gt;                                 &lt;tr&gt;                                     &lt;td class="em_height" height="40"&gt;&amp;nbsp;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td class="em_blue" style="font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#62cae3;" align="center"&gt;&lt;a href="http://www.southampton.ac.uk/courses.page" target="_blank" style="text-decoration:underline; color:#62cae3;"&gt;Courses&lt;/a&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href="http://www.southampton.ac.uk/uni-life.page" target="_blank" style="text-decoration:underline; color:#62cae3;"&gt;University life&lt;/a&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;a href="http://www.southampton.ac.uk/research.page" target="_blank" style="text-decoration:underline; color:#62cae3;"&gt;Research&lt;/a&gt;&lt;span class="em_hide"&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;a href="http://www.southampton.ac.uk/business.page" target="_blank" style="text-decoration:underline; color:#62cae3;"&gt;Business&lt;/a&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;a href="http://www.southampton.ac.uk/global-connections.page" target="_blank" style="text-decoration:underline; color:#62cae3;"&gt;Global connections&lt;/a&gt;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td style="font-size:1px; line-height:1px;" height="20"&gt;&amp;nbsp;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td valign="top" align="center"&gt;&lt;table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"&gt;                                         &lt;tbody&gt;                                             &lt;tr&gt;                                                 &lt;td valign="top" align="left"&gt;&lt;table class="em_wrapper" cellspacing="0" cellpadding="0" border="0" align="left"&gt;                                                     &lt;tbody&gt;                                                         &lt;tr&gt;                                                             &lt;td valign="top" align="center"&gt;&lt;table cellspacing="0" cellpadding="0" border="0" align="center"&gt;                                                                 &lt;tbody&gt;                                                                     &lt;tr&gt;                                                                         &lt;td class="em_center" style="font-family:'DIN Pro', Arial, sans-serif; font-size:22px; line-height:24px; color:#ffffff; text-transform:uppercase; font-weight:300;" align="left"&gt;&lt;span class="em_wht"&gt;Connect with us&lt;/span&gt;&lt;/td&gt;                                                                     &lt;/tr&gt;                                                                 &lt;/tbody&gt;                                                             &lt;/table&gt;&lt;/td&gt;                                                         &lt;/tr&gt;                                                     &lt;/tbody&gt;                                                 &lt;/table&gt;                                                 &lt;table class="em_wrapper" cellspacing="0" cellpadding="0" border="0" align="right"&gt;                                                     &lt;tbody&gt;                                                         &lt;tr&gt;                                                             &lt;td class="em_padtop" valign="top" align="center"&gt;&lt;table cellspacing="0" cellpadding="0" border="0" align="center"&gt;                                                                 &lt;tbody&gt;                                                                     &lt;tr&gt;                                                                         &lt;td valign="top" align="left"&gt;&lt;a href="https://www.facebook.com/unisouthampton" target="_blank" style="text-decoration:none;"&gt;&lt;img src="https://gallery.mailchimp.com/d14c4bc31e680281c5d4ef841/images/7daa13de-8079-46ca-8696-92763bc94afd.jpg" alt="FB" style="display:block; max-width:12px; font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#ffffff; font-weight:bold;" width="12" border="0" height="24" /&gt;&lt;/a&gt;&lt;/td&gt;                                                                         &lt;td width="40"&gt;&amp;nbsp;&lt;/td&gt;                                                                         &lt;td valign="top" align="left"&gt;&lt;a href="https://twitter.com/unisouthampton" target="_blank" style="text-decoration:none;"&gt;&lt;img src="https://gallery.mailchimp.com/d14c4bc31e680281c5d4ef841/images/e45992f9-fdd1-4a3f-ada9-9272236b9b46.jpg" alt="TW" style="display:block; max-width:24px; font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#ffffff; font-weight:bold;" width="24" border="0" height="24" /&gt;&lt;/a&gt;&lt;/td&gt;                                                                         &lt;td width="34"&gt;&amp;nbsp;&lt;/td&gt;                                                                         &lt;td valign="top" align="left"&gt;&lt;a href="http://instagram.com/uni_southampton/" target="_blank" style="text-decoration:none;"&gt;&lt;img src="https://gallery.mailchimp.com/d14c4bc31e680281c5d4ef841/images/dc801690-ba36-4409-8c06-d42623905605.jpg" alt="INSTA" style="display:block; max-width:24px; font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#ffffff; font-weight:bold;" width="24" border="0" height="24" /&gt;&lt;/a&gt;&lt;/td&gt;                                                                         &lt;td width="34"&gt;&amp;nbsp;&lt;/td&gt;                                                                         &lt;td valign="top" align="left"&gt;&lt;a href="https://www.linkedin.com/company/university-of-southampton" target="_blank" style="text-decoration:none;"&gt;&lt;img src="https://gallery.mailchimp.com/d14c4bc31e680281c5d4ef841/images/522c47d7-4b82-4991-b038-39601258a588.jpg" alt="IN" style="display:block; max-width:24px; font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#ffffff; font-weight:bold;" width="24" border="0" height="24" /&gt;&lt;/a&gt;&lt;/td&gt;                                                                         &lt;td width="34"&gt;&amp;nbsp;&lt;/td&gt;                                                                         &lt;td valign="top" align="left"&gt;&lt;a href="http://www.youtube.com/sotoncomms" target="_blank" style="text-decoration:none;"&gt;&lt;img src="https://gallery.mailchimp.com/d14c4bc31e680281c5d4ef841/images/d638508e-511f-42c6-939c-cfde1fdb2305.jpg" alt="YT" style="display:block; max-width:24px; font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#ffffff; font-weight:bold;" width="24" border="0" height="24" /&gt;&lt;/a&gt;&lt;/td&gt;                                                                     &lt;/tr&gt;                                                                 &lt;/tbody&gt;                                                             &lt;/table&gt;&lt;/td&gt;                                                         &lt;/tr&gt;                                                     &lt;/tbody&gt;                                                 &lt;/table&gt;&lt;/td&gt;                                             &lt;/tr&gt;                                         &lt;/tbody&gt;                                     &lt;/table&gt;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td class="em_height" height="30"&gt;&amp;nbsp;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td valign="top" align="center"&gt;&lt;table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"&gt;                                         &lt;tbody&gt;                                             &lt;tr&gt;                                                 &lt;td valign="top" align="left"&gt;&lt;table class="em_wrapper" cellspacing="0" cellpadding="0" border="0" align="left"&gt;                                                     &lt;tbody&gt;                                                         &lt;tr&gt;                                                             &lt;td valign="top" align="center"&gt;&lt;table cellspacing="0" cellpadding="0" border="0" align="center"&gt;                                                                 &lt;tbody&gt;                                                                     &lt;tr&gt;                                                                         &lt;td class="em_center" style="font-family:Arial, sans-serif; font-size:12px; line-height:24px; color:#ffffff;" align="left"&gt;&lt;span class="em_wht"&gt;                                              University of Southampton&lt;br /&gt;                                                                         SO17 1BJ United Kingdom&lt;br /&gt;                                                                         All Rights Reserved 2017&lt;/span&gt;&lt;/td&gt;                                                                     &lt;/tr&gt;                                                                 &lt;/tbody&gt;                                                             &lt;/table&gt;&lt;/td&gt;                                                         &lt;/tr&gt;                                                     &lt;/tbody&gt;                                                 &lt;/table&gt;                                                 &lt;table class="em_wrapper" cellspacing="0" cellpadding="0" border="0" align="right"&gt;                                                     &lt;tbody&gt;                                                         &lt;tr&gt;                                                             &lt;td class="em_padtop" valign="top" align="center"&gt;&lt;table cellspacing="0" cellpadding="0" border="0" align="center"&gt;                                                                 &lt;tbody&gt;                                                                     &lt;tr&gt;                                                                         &lt;td class="em_center" style="font-family:Arial, sans-serif; font-size:12px; line-height:24px; color:#ffffff;" align="right"&gt;&lt;span class="em_blue"&gt;&lt;a href="mailto:enrol@southampton.ac.uk" style="text-decoration:underline; color:#62cae3;"&gt;enrol@southampton.ac.uk&lt;/a&gt;&lt;br /&gt;                                                                         Tel: +44 (0)23 8059 8888&lt;br /&gt;                                                                         &lt;/span&gt;&lt;/td&gt;                                                                     &lt;/tr&gt;                                                                 &lt;/tbody&gt;                                                             &lt;/table&gt;&lt;/td&gt;                                                         &lt;/tr&gt;                                                     &lt;/tbody&gt;                                                 &lt;/table&gt;&lt;/td&gt;                                             &lt;/tr&gt;                                         &lt;/tbody&gt;                                     &lt;/table&gt;&lt;/td&gt;                                 &lt;/tr&gt;                                 &lt;tr&gt;                                     &lt;td class="em_height" height="30"&gt;&amp;nbsp;&lt;/td&gt;                                 &lt;/tr&gt;                             &lt;/tbody&gt;                         &lt;/table&gt;&lt;/td&gt;                         &lt;td class="em_side" width="50"&gt;&amp;nbsp;&lt;/td&gt;                     &lt;/tr&gt;                 &lt;/tbody&gt;             &lt;/table&gt;             &lt;br /&gt;             &amp;nbsp;&lt;/td&gt;         &lt;/tr&gt;     &lt;/tbody&gt; &lt;/table&gt;</urn:Content>
+      </urn:EmailTemplate>
+    </urn:CommunicationMethods>
+    <urn:interactionCategory-named-ref>
+      <urn:interactionCategory-named-ref>E-mail</urn:interactionCategory-named-ref>
+    </urn:interactionCategory-named-ref>
+  </urn:CommunicationTemplateVersion>
+  <urn:User xmlns:urn="urn:sungardhe:relate:importhandlers:usermanager:1.0">
+    <urn:UserId>brmuser</urn:UserId>
+    <urn:LastName>User</urn:LastName>
+    <urn:FirstName>Generic</urn:FirstName>
+    <urn:EmailAddress>srhelp@soton.ac.uk</urn:EmailAddress>
+    <urn:ExternallyAuthenticated>false</urn:ExternallyAuthenticated>
+    <urn:HashedPassword>
+      <urn:Digest>586RP/aPRFOq7IQjCE34RefvtvI=</urn:Digest>
+      <urn:Salt>hmskhpvmccgrzfjakfvx</urn:Salt>
+    </urn:HashedPassword>
+    <urn:StartDate>2012-07-30T00:00:00.000+01:00</urn:StartDate>
+    <urn:Enabled>true</urn:Enabled>
+  </urn:User>
+  <urn:RoleAssignment xmlns:urn="urn:sungardhe:relate:importhandlers:usermanager:1.0">
+    <urn:UserId>brmuser</urn:UserId>
+    <urn:RoleName>Admin</urn:RoleName>
+    <urn:OrganizationName>University of Southampton</urn:OrganizationName>
+  </urn:RoleAssignment>
+  <urn:Role xmlns:urn="urn:sungardhe:relate:importhandlers:usermanager:1.0">
+    <urn:Name>Admin</urn:Name>
+    <urn:Description>Allows access to all functionality and administrative objects</urn:Description>
+    <urn:Secured>true</urn:Secured>
+    <urn:AssociatedSecurityRoleName>SR_GENERALPERSON_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PARTY_ADMIN</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_INTERACTION_ADMIN</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTINTERESTS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ALUMNIOVERVIEW_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_DATABASELOC_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSIONEXECUTIONCONTEXT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PERSONALOUTLOOK_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_UUID_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTCURRICULA_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ATTRIBUTE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_VALIDATION_CODE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RECRUITMENT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEINSTANCE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_GENERALPERSON_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTATHLETICS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONLOG_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSIONEXECUTIONCONTEXT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONLOG_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ATTRIBUTE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONCONFIG_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTCREDENTIALS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_OUTPUT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_SECURED_ROLEASSIGNMENT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ALUMNI_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONFIELD_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_CAMPAIGN_START</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULECONSTANT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ORGANIZATION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_OUTPUT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONCONFIG_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ACADEMIC_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_APPLICATIONINFO_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PROSPECTOVERVIEW_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_JOBSCHEDULE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTADVISORS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_SETPASSWORD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PROSPECT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_SUSPECT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TAG_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EVENTACTION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_INTERACTION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_SHARED_LIST_MGMT</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONFIELD_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PERSONALOUTLOOK_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULESET_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_CAMPAIGN_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TAG_ASSOCIATION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_SYSTEM_REQ_IND</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_SQLEDIT</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULECONSTANT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTREGISTRATION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TAG_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTACTIVITIES_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLEASSIGNMENT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_CAMPAIGN_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEMODEL_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTSUMMARY_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_DATABASELOC_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTOVERVIEW_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONTEMPLATE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTPERFORMANCE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULEURI_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TEST_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_INTERACTION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PARTY_USER</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_SELF</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULEURI_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EVENTACTION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_JOBSCHEDULE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEMODEL_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RECRUITMENT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONTEMPLATE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULESET_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEINSTANCE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTAFFINITY_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_FOLDER_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONSERVICE_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_FOLDER_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLEASSIGNMENT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TARGETING_ADMIN</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_VALIDATION_TYPE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULE_READONLY</urn:AssociatedSecurityRoleName>
+  </urn:Role>
+  <urn:Organization xmlns:urn="urn:sungardhe:relate:importhandlers:organization:1.0">
+    <urn:Name>University of Southampton</urn:Name>
+    <urn:Description>The root organization.</urn:Description>
+    <urn:Root>true</urn:Root>
+  </urn:Organization>
+  <urn:Organization xmlns:urn="urn:sungardhe:relate:importhandlers:organization:1.0">
+    <urn:Name>Enrolment</urn:Name>
+    <urn:ParentIdentifier>Student Administration</urn:ParentIdentifier>
+    <urn:Root>false</urn:Root>
+  </urn:Organization>
+  <urn:Organization xmlns:urn="urn:sungardhe:relate:importhandlers:organization:1.0">
+    <urn:Name>Student Administration</urn:Name>
+    <urn:Description>Student and Academic Administration - SAA</urn:Description>
+    <urn:ParentIdentifier>University of Southampton</urn:ParentIdentifier>
+    <urn:Root>false</urn:Root>
+  </urn:Organization>
+  <urn:OrganizationAddressConfig xmlns:urn="urn:sungardhe:relate:communication:1.7">
+    <urn:OrganizationName>Enrolment</urn:OrganizationName>
+    <urn:EmailConfig>
+      <urn:DefaultFromAddress>enrol@soton.ac.uk</urn:DefaultFromAddress>
+      <urn:sender-named-ref>Enrolment Send</urn:sender-named-ref>
+      <urn:replyTo-named-ref>Enrolment Reply</urn:replyTo-named-ref>
+    </urn:EmailConfig>
+  </urn:OrganizationAddressConfig>
+  <urn:MailboxAccount xmlns:urn="urn:sungardhe:relate:communication:1.7" test="false">
+    <urn:Name>Enrolment Send</urn:Name>
+    <urn:MailboxAccountType>Sender</urn:MailboxAccountType>
+    <urn:Username>brmenrol</urn:Username>
+    <urn:EncryptedPassword>2bUznM59x6m119ecFSU+iA==</urn:EncryptedPassword>
+    <urn:DisplayName>Enrolment</urn:DisplayName>
+    <urn:EmailAddress>enrol-send@southampton.ac.uk</urn:EmailAddress>
+  </urn:MailboxAccount>
+  <urn:MailboxAccount xmlns:urn="urn:sungardhe:relate:communication:1.7" test="false">
+    <urn:Name>Enrolment Reply</urn:Name>
+    <urn:MailboxAccountType>ReplyTo</urn:MailboxAccountType>
+    <urn:Username>brmenr</urn:Username>
+    <urn:EncryptedPassword>2bUznM59x6m119ecFSU+iA==</urn:EncryptedPassword>
+    <urn:DisplayName>Enrolment</urn:DisplayName>
+    <urn:EmailAddress>enrol-reply@southampton.ac.uk</urn:EmailAddress>
+  </urn:MailboxAccount>
+</objects>

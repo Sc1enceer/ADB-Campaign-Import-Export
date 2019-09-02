@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?><objects>
+  <urn:Campaign xmlns:urn="urn:sungardhe:relate:campaign:1.0">
+    <urn:DesignStatus>Development</urn:DesignStatus>
+    <urn:Name>201920_Enrolment_Chase_New_Entrants</urn:Name>
+    <urn:Description>Student Enrolment Chase, New Entrants for 201819</urn:Description>
+    <urn:StatedGoal>Increase in student enrolment and decreased administration overheads</urn:StatedGoal>
+    <urn:AdministratorRole>
+      <urn:role-named-ref>Admin</urn:role-named-ref>
+    </urn:AdministratorRole>
+    <urn:population-named-ref>
+      <urn:Name>201920_Enrolment_Chase_New_Entrants_POP</urn:Name>
+      <urn:Owner>brmuser</urn:Owner>
+    </urn:population-named-ref>
+    <urn:CampaignModel>
+      <urn:ContextParameters>
+        <urn:ContextParameter required="false" type="Date">
+          <urn:Name>v_ActivityDate</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Chase1_sent</urn:Name>
+          <urn:Description>has Chase1 email already been sent.</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Chase2_sent</urn:Name>
+          <urn:Description>has Chase2 email already been sent.</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Chase3_sent</urn:Name>
+          <urn:Description>Has Chase3 email been sent.</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Date">
+          <urn:Name>v_commDate7</urn:Name>
+          <urn:Description/>
+          <urn:DefaultValue>
+            <urn:dateValue>2013-10-11T00:00:00.000+01:00</urn:dateValue>
+          </urn:DefaultValue>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Days_Past_Start</urn:Name>
+          <urn:Description>Number of days past Students Programme Start date.</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Days_Past_Start_number</urn:Name>
+          <urn:Description>numeric value</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Days_Past_Start_sign</urn:Name>
+          <urn:Description>+ or - (past or to go)</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Deceased</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_end_of_wait</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_ESTS_Code</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Fluffy1_Sent</urn:Name>
+          <urn:Description>has Fluffy1 email already been sent.</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Fluffy2_sent</urn:Name>
+          <urn:Description>has Fluffy2 email already been sent.</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_LateStarter_sent</urn:Name>
+          <urn:Description>has Late Starter email already been sent.</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_NoShow_sent</urn:Name>
+          <urn:Description>No show after 32 days</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_on_hold</urn:Name>
+          <urn:Description>On Hold</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_PIDM</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_ProgramCategory</urn:Name>
+          <urn:Description>Category of Students Programme (P, N or O)</urn:Description>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_STST_Code</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Date">
+          <urn:Name>v_sysdate</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_Term</urn:Name>
+          <urn:Description/>
+          <urn:DefaultValue>
+            <urn:stringValue>201920</urn:stringValue>
+          </urn:DefaultValue>
+        </urn:ContextParameter>
+        <urn:ContextParameter required="false" type="Text">
+          <urn:Name>v_which_email</urn:Name>
+          <urn:Description/>
+        </urn:ContextParameter>
+      </urn:ContextParameters>
+      <urn:AttributeMap>
+        <urn:AttributeMapping attribute="CampaignInstance.targetID" parameter="v_PIDM"/>
+        <urn:AttributeMapping attribute="CampaignInstance.creationDate" parameter="v_sysdate"/>
+      </urn:AttributeMap>
+      <urn:FreeTexts>
+        <urn:FreeText>
+          <urn:Location x="14" y="199"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="102"/>
+          </urn:Colors>
+          <urn:Dimension height="33" width="43"/>
+          <urn:Text>Start</urn:Text>
+        </urn:FreeText>
+        <urn:FreeText>
+          <urn:Location x="775" y="722"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="102" red="255"/>
+          </urn:Colors>
+          <urn:Dimension height="34" width="52"/>
+          <urn:Text>End</urn:Text>
+        </urn:FreeText>
+      </urn:FreeTexts>
+      <urn:Nodes>
+        <urn:StartNode key="0">
+          <urn:Location x="26" y="248"/>
+          <urn:Name>Start</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="58">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:WayPoint>
+                <urn:Location x="51" y="265"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+        </urn:StartNode>
+        <urn:StopNode key="62">
+          <urn:Location x="224" y="558"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_Withdrawn_1</urn:Name>
+        </urn:StopNode>
+        <urn:StopNode key="41">
+          <urn:Location x="734" y="692"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_ordinary</urn:Name>
+          <urn:Description>No Showers or beyond Freeze date.</urn:Description>
+        </urn:StopNode>
+        <urn:StopNode key="61">
+          <urn:Location x="165" y="558"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_Enrolled_1</urn:Name>
+        </urn:StopNode>
+        <urn:StopNode key="59">
+          <urn:Location x="108" y="557"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_Dead_1</urn:Name>
+        </urn:StopNode>
+        <urn:MCCActivity key="60">
+          <urn:Location x="416" y="23"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Fluffy_email_1</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="65">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:WayPoint>
+                <urn:Location x="876" y="258"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Chase_New_Entrants_201819_Fluffy_email_1</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+        <urn:MCCActivity key="78">
+          <urn:Location x="420" y="212"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Chase_email1</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="65">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:WayPoint>
+                <urn:Location x="542" y="233"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="846" y="273"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Chase_New_Entrants_201819_Chase_email_1</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+        <urn:MCCActivity key="53">
+          <urn:Location x="420" y="438"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Chase_email2</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="65">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Chase_New_Entrants_201819_Chase_email_2</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+        <urn:MCCActivity key="73">
+          <urn:Location x="419" y="532"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Chase_email3</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="65">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:WayPoint>
+                <urn:Location x="879" y="306"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Chase_New_Entrants_201819_Chase_email_3</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+        <urn:MCCActivity key="72">
+          <urn:Location x="411" y="115"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Fluffy_email_2</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="65">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Chase_New_Entrants_201819_Fluffy_email_2</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+        <urn:MCCActivity key="69">
+          <urn:Location x="422" y="357"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Late_Starter</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="65">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:WayPoint>
+                <urn:Location x="845" y="292"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Chase_New_Entrants_201819_Late_Starter_email</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+        <urn:MCCActivity key="21">
+          <urn:Location x="416" y="620"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="102" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>No_Show_email</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="41">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:WayPoint>
+                <urn:Location x="551" y="644"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="746" y="705"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Student Record Team 201819</urn:folder-named-ref>
+            <urn:TemplateName>Enrolment_Chase_New_Entrants_201819_No_Show_email</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+        <urn:RuleNode key="58">
+          <urn:Location x="97" y="244"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+            <urn:BackgroundColor blue="255" green="204" red="204"/>
+          </urn:Colors>
+          <urn:Name>ExclusionChecks_1</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="21">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="418" y="596"/>
+                <urn:Description>32 days after start date.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_which_email = "NoShow" and v_Chase3_sent = "Y" and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N" and v_NoShow_sent  = "N"</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="246" y="291"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="41">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="421" y="707"/>
+                <urn:Description>Freeze date exceeded.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_which_email = "Freeze" and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N"</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="242" y="291"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="375" y="730"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="621" y="730"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="749" y="711"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="53">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="416" y="414"/>
+                <urn:Description>18 days after start date.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_which_email = "Chase2" and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N" and v_Chase2_sent  = "N" and ( v_Chase1_sent = "Y" or v_LateStarter_sent ="Y" )</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="254" y="283"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="361" y="381"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="59">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Vertical">
+                <urn:Location x="107" y="401"/>
+                <urn:Description>Deceased</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_Deceased = "Y"</urn:GuardConditionRule>
+            </urn:Transition>
+            <urn:Transition targetKey="60">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="364" y="73"/>
+                <urn:Description>Between 20 and 10 days before start date.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_which_email = "Fluffy1" and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N" and v_Fluffy1_Sent = "N"</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="251" y="250"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="263" y="238"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="61">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Vertical">
+                <urn:Location x="163" y="398"/>
+                <urn:Description>Not Eligible</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>(v_ESTS_Code = "AA"  or  v_ESTS_Code = "EN" or  v_ESTS_Code = "EX" or  v_ESTS_Code = "NR" or  v_ESTS_Code = "PA" or  v_ESTS_Code = "PN" or  v_ESTS_Code = "RA" or  v_ESTS_Code = "RN" or  v_ESTS_Code = "SB" or  v_ESTS_Code = "WU" or  v_ESTS_Code = "YA") and v_Deceased = "N" and v_STST_Code = "AS" and v_on_hold = "N"</urn:GuardConditionRule>
+            </urn:Transition>
+            <urn:Transition targetKey="62">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Vertical">
+                <urn:Location x="220" y="366"/>
+                <urn:Description>Withdrawn or No-Show</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_Deceased = "N" and ( (v_ESTS_Code =  "WD" or v_ESTS_Code =  "NS" or v_ESTS_Code =  "SS" or v_ESTS_Code =  "SU" or v_ESTS_Code =  "LH" or  v_ESTS_Code =  "EC" or v_ESTS_Code =  "EP" or v_ESTS_Code =  "PP" or v_ESTS_Code =  "RW" or v_ESTS_Code =  "WR" or v_ESTS_Code =  "WX" or v_ESTS_Code =  "YP")  or v_STST_Code &lt;&gt; "AS"  or v_on_hold = "Y")</urn:GuardConditionRule>
+            </urn:Transition>
+            <urn:Transition targetKey="65">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="331" y="0"/>
+                <urn:Description>Between emails, Not Enrolled, Eligible and not Withdrawn.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>(v_which_email = "None" or (v_which_email = "Fluffy1" and v_Fluffy1_Sent = "Y") or (v_which_email = "Fluffy2" and v_Fluffy2_sent = "Y") or (v_which_email = "Chase3" and v_Chase2_sent = "N" and v_LateStarter_sent = "N") or (v_which_email = "NoShow" and v_Chase3_sent = "N") ) and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N"</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="241" y="14"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="904" y="16"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="905" y="234"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="69">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="419" y="332"/>
+                <urn:Description>Missing an email.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>( ( v_which_email = "Chase1" and v_Fluffy2_sent = "N") or ( v_which_email = "Chase2" and v_Chase1_sent = "N" and v_LateStarter_sent = "N") ) and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N"</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="253" y="276"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="72">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="394" y="178"/>
+                <urn:Description>Within 8 days after the start date.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_which_email = "Fluffy2" and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N" and v_Fluffy2_sent = "N"</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="251" y="256"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="73">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="408" y="499"/>
+                <urn:Description>25 days after the start date.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_which_email = "Chase3" and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N" and v_Chase3_sent  = "N" and ( v_Chase2_sent = "Y" or v_LateStarter_sent ="Y" )</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="250" y="286"/>
+              </urn:WayPoint>
+            </urn:Transition>
+            <urn:Transition targetKey="78">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:GuardLabel orientation="Horizontal">
+                <urn:Location x="390" y="259"/>
+                <urn:Description>11 days after the start date.</urn:Description>
+              </urn:GuardLabel>
+              <urn:GuardConditionRule>v_which_email = "Chase1" and (v_ESTS_Code="EE" or v_ESTS_Code="EL"  or v_ESTS_Code="PE"  or v_ESTS_Code="RE" or v_ESTS_Code="YE" or v_ESTS_Code = "PL" or v_ESTS_Code = "YL") and v_STST_Code = "AS" and v_Deceased = "N" and v_on_hold = "N" and  v_Chase1_sent = "N" and  v_Fluffy2_sent = "Y"</urn:GuardConditionRule>
+              <urn:WayPoint>
+                <urn:Location x="254" y="268"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="423" y="236"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:ActivityParameterMap>
+            <urn:ActivityParameterMapping activityParameter="o_IsDeceased" contextParameter="v_Deceased" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="o_Chase1_sent" contextParameter="v_Chase1_sent" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="o_Fluffy2_semt" contextParameter="v_Fluffy2_sent" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="o_Chase2_sent" contextParameter="v_Chase2_sent" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="_pidm" contextParameter="v_PIDM" direction="Forward"/>
+            <urn:ActivityParameterMapping activityParameter="o_Fluffy1_sent" contextParameter="v_Fluffy1_Sent" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="i_pidm" contextParameter="v_PIDM" direction="Forward"/>
+            <urn:ActivityParameterMapping activityParameter="o_stst" contextParameter="v_STST_Code" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="o_LateStarter_sent" contextParameter="v_LateStarter_sent" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="Which_Email" contextParameter="v_which_email" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="O_NoShow_sent" contextParameter="v_NoShow_sent" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="i_term" contextParameter="v_Term" direction="Forward"/>
+            <urn:ActivityParameterMapping activityParameter="o_on_hold" contextParameter="v_on_hold" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="i_PIDM" contextParameter="v_PIDM" direction="Forward"/>
+            <urn:ActivityParameterMapping activityParameter="i_sysdate" contextParameter="v_sysdate" direction="BiDirectional"/>
+            <urn:ActivityParameterMapping activityParameter="o_estsCode" contextParameter="v_ESTS_Code" direction="Backward"/>
+            <urn:ActivityParameterMapping activityParameter="_termCode" contextParameter="v_Term" direction="Forward"/>
+            <urn:ActivityParameterMapping activityParameter="o_Chase3_sent" contextParameter="v_Chase3_sent" direction="Backward"/>
+          </urn:ActivityParameterMap>
+          <urn:RuleUri>201819_Enrolment_Chase_New_Entrant_Exclusions</urn:RuleUri>
+        </urn:RuleNode>
+        <urn:TimerNode key="65">
+          <urn:Location x="839" y="258"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="204" green="204" red="255"/>
+          </urn:Colors>
+          <urn:Name>Wait_a_day</urn:Name>
+          <urn:Transitions>
+            <urn:Transition targetKey="58">
+              <urn:Color blue="102" green="102" red="102"/>
+              <urn:WayPoint>
+                <urn:Location x="906" y="307"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="906" y="769"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="64" y="769"/>
+              </urn:WayPoint>
+              <urn:WayPoint>
+                <urn:Location x="64" y="287"/>
+              </urn:WayPoint>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:Duration hours="24" minutes="0" ms="0" seconds="0"/>
+        </urn:TimerNode>
+      </urn:Nodes>
+    </urn:CampaignModel>
+  </urn:Campaign>
+  <urn:Population xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201920_Enrolment_Chase_New_Entrants_POP</urn:Name>
+    <urn:Description>Population for New Entrants chase email</urn:Description>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExecutionContext>
+      <urn:ExpressionName>201920_Enrolment_Chase_New_Entrants_EXP</urn:ExpressionName>
+      <urn:ExpressionBinding>
+        <urn:Name>Reg_Term</urn:Name>
+        <urn:Value>201920</urn:Value>
+      </urn:ExpressionBinding>
+    </urn:ExecutionContext>
+  </urn:Population>
+  <urn:Expression xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201920_Enrolment_Chase_New_Entrants_EXP</urn:Name>
+    <urn:Description>New for 201920</urn:Description>
+    <urn:Application>Relate</urn:Application>
+    <urn:Creator>brmuser</urn:Creator>
+    <urn:RawSql>true</urn:RawSql>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExpressionDefinition>
+      <urn:XmlExpression>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;Expression xmlns="urn:com.sungardhe.common.services.selection.querygenerator"&gt;&lt;DatabaseColumnName&gt;SPRIDEN_PIDM&lt;/DatabaseColumnName&gt;&lt;DatabaseLocationName&gt;Student&lt;/DatabaseLocationName&gt;&lt;DataType&gt;number&lt;/DataType&gt;&lt;Subquery&gt;&lt;Statement&gt;select spriden_pidm from spriden, sgbstdn, sfbetrm  where SGBSTDN.SGBSTDN_PIDM = SFBETRM.SFBETRM_PIDM   and SGBSTDN.SGBSTDN_TERM_CODE_EFF = SFBETRM.SFBETRM_TERM_CODE   and SGBSTDN.SGBSTDN_PIDM = SPRIDEN.SPRIDEN_PIDM   and SGBSTDN.SGBSTDN_TERM_CODE_ADMIT = SGBSTDN.SGBSTDN_TERM_CODE_EFF   and SPRIDEN.SPRIDEN_CHANGE_IND IS NULL   and SFBETRM.SFBETRM_ESTS_CODE in ('EL','EE','PE','RE','YE','PL','YL')  and SGBSTDN.SGBSTDN_STST_CODE = 'AS'   and SGBSTDN.SGBSTDN_CAMP_CODE not in ('MY', 'DL', 'EL', 'VT', 'SI','XX')   and SGBSTDN.SGBSTDN_PROGRAM_1 != '4326'   and SGBSTDN.SGBSTDN_PROGRAM_1 not in              (select gtvsdax_external_code from gtvsdax              where gtvsdax_internal_code_group = 'PRSESS_CRS_CODE'              and gtvsdax_internal_code = 'PRSESS_CRS')   and SGBSTDN.SGBSTDN_TERM_CODE_EFF = :1   and exists          (select 'true' from goremal          where          GOREMAL_PIDM = SPRIDEN.SPRIDEN_PIDM          and GOREMAL_STATUS_IND = 'A'          and GOREMAL_PREFERRED_IND = 'Y')   and exists          (select 'true' from spbpers          where SPBPERS.SPBPERS_PIDM = SPRIDEN.SPRIDEN_PIDM          and nvl(SPBPERS.SPBPERS_DEAD_IND, 'N') != 'Y' )   and exists          (select 'true' from sarappd, saradap                           where sarappd_pidm = SGBSTDN.SGBSTDN_PIDM                           and SARAPPD_TERM_CODE_ENTRY = SGBSTDN.SGBSTDN_TERM_CODE_EFF                          and (    (nvl(SARADAP_PROGRAM_1,'null') = nvl(SGBSTDN.SGBSTDN_PROGRAM_1,'null')          and nvl(SARADAP_MAJR_CODE_1,'null')=nvl(SGBSTDN.SGBSTDN_MAJR_CODE_1,'null'))                                      or          (nvl(SARADAP_PROGRAM_2,'null') = nvl(SGBSTDN.SGBSTDN_PROGRAM_2,'null')                      and nvl(SARADAP_MAJR_CODE_2,'null')=nvl(SGBSTDN.SGBSTDN_MAJR_CODE_2,'null'))               )                          and SARADAP_PIDM = SARAPPD_PIDM                          and SARADAP_TERM_CODE_ENTRY = SARAPPD_TERM_CODE_ENTRY                          and SARADAP_APPL_NO = SARAPPD_APPL_NO                          and SARAPPD_APDC_CODE in ('UA','UF')                          and trunc(SARAPPD_APDC_DATE) &amp;lt;= trunc(sysdate-7)        )   and SGBSTDN.SGBSTDN_PROGRAM_1 not in      (select gtvsdax_external_code from gtvsdax      where gtvsdax_internal_code_group = 'BRM'      and gtvsdax_internal_code = 'NON_STANDD')         AND NOT EXISTS                   (SELECT 'true'                      FROM SPRHOLD                     WHERE     SPRHOLD_PIDM = SPRIDEN.SPRIDEN_PIDM                           AND SPRHOLD_HLDD_CODE = 'FQ'                           AND (    SYSDATE &amp;gt;= SPRHOLD_FROM_DATE                                AND SYSDATE &amp;lt;= SPRHOLD_TO_DATE))&lt;/Statement&gt;&lt;Bindings&gt;&lt;Timestamp&gt;0&lt;/Timestamp&gt;&lt;Size&gt;1&lt;/Size&gt;&lt;Binding&gt;&lt;Id&gt;1&lt;/Id&gt;&lt;BindingName&gt;Reg_Term&lt;/BindingName&gt;&lt;Description&gt;Registration Term&lt;/Description&gt;&lt;DataType&gt;string&lt;/DataType&gt;&lt;DataSource&gt;literal&lt;/DataSource&gt;&lt;Value&gt;201920&lt;/Value&gt;&lt;Property&gt;&lt;Name&gt;groupId&lt;/Name&gt;&lt;Value&gt;9CE4D9A4-275C-B048-0109-75A25EB634CD&lt;/Value&gt;&lt;/Property&gt;&lt;Property&gt;&lt;Name&gt;groupType&lt;/Name&gt;&lt;Value&gt;is&lt;/Value&gt;&lt;/Property&gt;&lt;/Binding&gt;&lt;/Bindings&gt;&lt;/Subquery&gt;&lt;/Expression&gt;</urn:XmlExpression>
+    </urn:ExpressionDefinition>
+  </urn:Expression>
+</objects>

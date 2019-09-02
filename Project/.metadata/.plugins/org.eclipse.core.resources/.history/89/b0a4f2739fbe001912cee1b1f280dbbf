@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+  <urn:Campaign xmlns:urn="urn:sungardhe:relate:campaign:1.0">
+    <urn:DesignStatus>Development</urn:DesignStatus>
+    <urn:Name>201920_Mark_Release_Presessional</urn:Name>
+    <urn:Description>PRJTASK0547732 - Marks release for pre-sessional students, 6th September 2019</urn:Description>
+    <urn:StatedGoal>201920 Presessional Mark Release executed on 6th Sep 2019</urn:StatedGoal>
+    <urn:AdministratorRole>
+      <urn:role-named-ref>Admin</urn:role-named-ref>
+    </urn:AdministratorRole>
+    <urn:population-named-ref>
+      <urn:Name>201920_Mark_Release_Presessional_Course_B_Pop</urn:Name>
+      <urn:Owner>brmuser</urn:Owner>
+    </urn:population-named-ref>
+    <urn:CampaignModel>
+      <urn:ContextParameters/>
+      <urn:Nodes>
+        <urn:StartNode key="0">
+          <urn:Location x="20" y="89"/>
+          <urn:Name>Start</urn:Name>
+          <urn:Description>Start</urn:Description>
+          <urn:Transitions>
+            <urn:Transition targetKey="1">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+        </urn:StartNode>
+        <urn:StopNode key="2">
+          <urn:Location x="428" y="89"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="0" green="0" red="0"/>
+          </urn:Colors>
+          <urn:Name>Stop_1</urn:Name>
+          <urn:Description>End</urn:Description>
+        </urn:StopNode>
+        <urn:MCCActivity key="1">
+          <urn:Location x="110" y="84"/>
+          <urn:Colors>
+            <urn:ForegroundColor blue="102" green="102" red="102"/>
+            <urn:BackgroundColor blue="255" green="255" red="255"/>
+          </urn:Colors>
+          <urn:Name>Mark_Release_Presessional_201920</urn:Name>
+          <urn:Description>PRJTASK0547732 - 201920 Marks Release Presessional</urn:Description>
+          <urn:Transitions>
+            <urn:Transition targetKey="2">
+              <urn:Color blue="102" green="102" red="102"/>
+            </urn:Transition>
+          </urn:Transitions>
+          <urn:AttributeMap/>
+          <urn:communication-template-named-ref>
+            <urn:folder-named-ref>Exams, Awards &amp; Graduation</urn:folder-named-ref>
+            <urn:TemplateName>201920_Marks_Release_Presessionals</urn:TemplateName>
+          </urn:communication-template-named-ref>
+        </urn:MCCActivity>
+      </urn:Nodes>
+    </urn:CampaignModel>
+  </urn:Campaign>
+  <urn:Population xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201920_Mark_Release_Presessional_Course_B_Pop</urn:Name>
+    <urn:Description>PRJTASK0547732 - Marks release for pre-sessional students, 6th September 2019</urn:Description>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExecutionContext>
+      <urn:ExpressionName>201920_Mark_Release_Presessional_Course_B</urn:ExpressionName>
+    </urn:ExecutionContext>
+  </urn:Population>
+  <urn:Expression xmlns:urn="urn:sungardhe:relate:importhandlers:selection:1.1">
+    <urn:Name>201920_Mark_Release_Presessional_Course_B</urn:Name>
+    <urn:Description>PRJTASK0547732 - Marks release for pre-sessional students, 6th September 2019</urn:Description>
+    <urn:Application>Relate</urn:Application>
+    <urn:Creator>brmuser</urn:Creator>
+    <urn:RawSql>true</urn:RawSql>
+    <urn:ListType>student</urn:ListType>
+    <urn:ExpressionDefinition>
+      <urn:XmlExpression>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;Expression xmlns="urn:com.sungardhe.common.services.selection.querygenerator"&gt;&lt;DatabaseColumnName&gt;SPRIDEN_PIDM&lt;/DatabaseColumnName&gt;&lt;DatabaseLocationName&gt;Student&lt;/DatabaseLocationName&gt;&lt;DataType&gt;number&lt;/DataType&gt;&lt;Subquery&gt;&lt;Statement&gt;SELECT spriden_pidm FROM sgbstdn,      spbpers,      goremal,      spriden,      sorlcur  a WHERE sgbstdn_term_code_eff = '201920'   AND sgbstdn_term_code_admit &amp;gt;= '201819'   AND  a.sorlcur_term_code = '201920' AND a.sorlcur_lmod_code = 'LEARNER'   AND a.sorlcur_cact_code = 'ACTIVE'   AND a.sorlcur_current_cde = 'Y'   AND a.sorlcur_program IN ('4291', '4292', '5083', '5084',  '6130', '8382', '8383', '8385', '8386', '8313')   AND sgbstdn_pidm = a.sorlcur_pidm   AND spbpers_pidm = a.sorlcur_pidm   AND spbpers_dead_ind IS NULL   AND goremal_pidm = a.sorlcur_pidm   AND  goremal_emal_code = 'UNI'   AND goremal_status_ind = 'A'   AND EXISTS (SELECT shrtckg_pidm               FROM shrtckg               WHERE shrtckg_pidm = a.sorlcur_pidm                 AND  shrtckg_term_code IN ('201819', '201920')                 AND shrtckg_gchg_code NOT IN ('IE', 'AU')                 AND TO_DATE (shrtckg_final_grde_chg_date) &amp;gt;= '01-AUG-2019') AND NOT EXISTS  (SELECT b.sorlcur_pidm                   FROM sorlcur b                   WHERE b.sorlcur_term_code &amp;lt; '201819'                     AND b.sorlcur_lmod_code = 'LEARNER'                     AND  b.sorlcur_pidm = a.sorlcur_pidm                     AND b.sorlcur_program IN (SELECT gtvsdax_external_code                                                FROM gtvsdax                                                WHERE gtvsdax_internal_code = 'PRSESS_CRS'                                                 AND gtvsdax_internal_code_group = 'PRSESS_CRS_CODE')) AND spriden_pidm = a.sorlcur_pidm AND  spriden_change_ind IS NULL&lt;/Statement&gt;&lt;Bindings&gt;&lt;Timestamp&gt;0&lt;/Timestamp&gt;&lt;Size&gt;0&lt;/Size&gt;&lt;/Bindings&gt;&lt;/Subquery&gt;&lt;/Expression&gt;</urn:XmlExpression>
+    </urn:ExpressionDefinition>
+  </urn:Expression>
+  <urn:CommunicationTemplate xmlns:urn="urn:sungardhe:relate:communication:1.7" personal="false">
+    <urn:Name>201920_Marks_Release_Presessionals</urn:Name>
+    <urn:Description>PRJTASK0547732 Marks Release Presessionals 6th September 2019</urn:Description>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:folder-named-ref>Exams, Awards &amp; Graduation</urn:folder-named-ref>
+    <urn:organization-named-ref>Exams Awards and Graduation</urn:organization-named-ref>
+  </urn:CommunicationTemplate>
+  <urn:Folder xmlns:urn="urn:sungardhe:relate:communication:1.7" internal="false">
+    <urn:Name>Exams, Awards &amp; Graduation</urn:Name>
+    <urn:Description>Communication templates for the Exams, Awards &amp; Graduation Team</urn:Description>
+  </urn:Folder>
+  <urn:CommunicationTemplateVersion xmlns:urn="urn:sungardhe:relate:communication:1.7" active="true" oneOff="false" publish="true">
+    <urn:template-named-ref>
+      <urn:folder-named-ref>Exams, Awards &amp; Graduation</urn:folder-named-ref>
+      <urn:template-named-ref>201920_Marks_Release_Presessionals</urn:template-named-ref>
+    </urn:template-named-ref>
+    <urn:Owner>brmuser</urn:Owner>
+    <urn:Version>1.0</urn:Version>
+    <urn:ValidFrom>2019-08-13T16:13:55.000+01:00</urn:ValidFrom>
+    <urn:CommunicationMethods>
+      <urn:EmailTemplate>
+        <urn:FromList>results@soton.ac.uk</urn:FromList>
+        <urn:ToList>brmdev2sent@soton.ac.uk</urn:ToList>
+        <urn:Subject>Your Module Results</urn:Subject>
+        <urn:Content>&lt;table&gt;     &lt;tbody&gt;         &lt;tr&gt;             &lt;td&gt;&lt;div style="float: right;margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;img alt="University of Southampton" src="http://www.southampton.ac.uk/static-images/logos/university/main-logo-small.png" align="right" /&gt;&lt;/div&gt;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&amp;nbsp;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&amp;nbsp;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&amp;nbsp;&lt;/td&gt;         &lt;/tr&gt;         &lt;tr&gt;             &lt;td&gt;&lt;div style=" margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;Dear |::=Constituent.Name Information.FirstName::|,&lt;/p&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:9pt; font-family: Arial"&gt;&lt;table summary="Results Notification Slip" width="60%"&gt;                 &lt;tbody&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Year&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;2019/20&lt;/td&gt;                     &lt;/tr&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Student Name&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;|::=Constituent.Name Information.FullName::|&lt;/td&gt;                     &lt;/tr&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Student ID&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;|::=Constituent.Identifiers.Banner ID::|&lt;/td&gt;                     &lt;/tr&gt;                     &lt;tr&gt;                         &lt;td&gt;&lt;strong&gt;Programme Description&lt;/strong&gt;&lt;/td&gt;                         &lt;td&gt;Presessional Course B&lt;/td&gt;                     &lt;/tr&gt;                 &lt;/tbody&gt;             &lt;/table&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;|::=UoS_Student.UoS Academic History - Full Term.UoS Pres Module Marks Table - Term(pterm="201718",term="201819")::|&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;table summary="Overall Module Marks" width="38%"&gt;                 &lt;tbody&gt;                     &lt;tr&gt;                         &lt;td&gt;Average mark&lt;/td&gt;                         &lt;td&gt;&amp;nbsp;&lt;/td&gt;                         &lt;td&gt;|::=UoS_Student.UoS Academic History - Full Term.UoS Pres Overall Mark(pterm="201718",term="201819")::|&lt;/td&gt;                     &lt;/tr&gt;                 &lt;/tbody&gt;             &lt;/table&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;|::=UoS_Student.UoS Academic History - Full Term.UoS Pres Overall Mark Desc(term="201819")::|&lt;/p&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;If you think your marks are incorrect, please contact  your Student Office at Avenue campus.  These results will show in your  Banner Self Service account no earlier than 12 noon on Friday 13  September.&lt;/p&gt;&lt;/div&gt;             &lt;div style="margin: 0cm 0cm 10pt;font-size:10pt; font-family: Arial"&gt;&lt;p&gt;Student and Academic Administration&lt;/p&gt;&lt;/div&gt;&lt;/td&gt;         &lt;/tr&gt;     &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;!--[CDATA[]] --&gt;</urn:Content>
+      </urn:EmailTemplate>
+    </urn:CommunicationMethods>
+    <urn:interactionCategory-named-ref>
+      <urn:interactionCategory-named-ref>E-mail</urn:interactionCategory-named-ref>
+    </urn:interactionCategory-named-ref>
+  </urn:CommunicationTemplateVersion>
+  <urn:User xmlns:urn="urn:sungardhe:relate:importhandlers:usermanager:1.0">
+    <urn:UserId>brmuser</urn:UserId>
+    <urn:LastName>User</urn:LastName>
+    <urn:FirstName>Generic</urn:FirstName>
+    <urn:EmailAddress>srhelp@soton.ac.uk</urn:EmailAddress>
+    <urn:ExternallyAuthenticated>false</urn:ExternallyAuthenticated>
+    <urn:HashedPassword>
+      <urn:Digest>586RP/aPRFOq7IQjCE34RefvtvI=</urn:Digest>
+      <urn:Salt>hmskhpvmccgrzfjakfvx</urn:Salt>
+    </urn:HashedPassword>
+    <urn:StartDate>2012-07-30T00:00:00.000+01:00</urn:StartDate>
+    <urn:Enabled>true</urn:Enabled>
+  </urn:User>
+  <urn:RoleAssignment xmlns:urn="urn:sungardhe:relate:importhandlers:usermanager:1.0">
+    <urn:UserId>brmuser</urn:UserId>
+    <urn:RoleName>Admin</urn:RoleName>
+    <urn:OrganizationName>University of Southampton</urn:OrganizationName>
+  </urn:RoleAssignment>
+  <urn:Role xmlns:urn="urn:sungardhe:relate:importhandlers:usermanager:1.0">
+    <urn:Name>Admin</urn:Name>
+    <urn:Description>Allows access to all functionality and administrative objects</urn:Description>
+    <urn:Secured>true</urn:Secured>
+    <urn:AssociatedSecurityRoleName>SR_ACADEMIC_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTOVERVIEW_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_DATABASELOC_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TAG_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULESET_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTACTIVITIES_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PERSONALOUTLOOK_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_SUSPECT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONLOG_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLEASSIGNMENT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ORGANIZATION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_UUID_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_INTERACTION_ADMIN</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_FOLDER_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_JOBSCHEDULE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONCONFIG_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TARGETING_ADMIN</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULECONSTANT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_SELF</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PROSPECTOVERVIEW_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PARTY_USER</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PARTY_ADMIN</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLEASSIGNMENT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULEURI_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_SETPASSWORD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_JOBSCHEDULE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_GENERALPERSON_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ALUMNIOVERVIEW_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULECONSTANT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTADVISORS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULESET_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_OUTPUT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEINSTANCE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ATTRIBUTE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTAFFINITY_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONTEMPLATE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_USER_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONLOG_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RECRUITMENT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_OUTPUT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTREGISTRATION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_SHARED_LIST_MGMT</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TEST_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RECRUITMENT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_VALIDATION_TYPE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONTEMPLATE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTINTERESTS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEMODEL_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_APPLICATIONINFO_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TAG_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSIONEXECUTIONCONTEXT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONCONFIG_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ROLE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EVENTACTION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_INTERACTION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EVENTACTION_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_SYSTEM_REQ_IND</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONSERVICE_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTCREDENTIALS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_SQLEDIT</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_CAMPAIGN_START</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTSUMMARY_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTPERFORMANCE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_DATABASELOC_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_TAG_ASSOCIATION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_INTERACTION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTATHLETICS_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSIONEXECUTIONCONTEXT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_GENERALPERSON_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_RULEURI_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_SECURED_ROLEASSIGNMENT_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PROSPECT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_POPULATION_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONFIELD_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_EXECUTION</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENTCURRICULA_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEMODEL_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ATTRIBUTE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_PERSONALOUTLOOK_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_STUDENT_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_VALIDATION_CODE_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_LIFECYCLEINSTANCE_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_COMMUNICATIONFIELD_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_CAMPAIGN_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_CAMPAIGN_CRUD</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_ALUMNI_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_FOLDER_READONLY</urn:AssociatedSecurityRoleName>
+    <urn:AssociatedSecurityRoleName>SR_EXPRESSION_CRUD</urn:AssociatedSecurityRoleName>
+  </urn:Role>
+  <urn:Organization xmlns:urn="urn:sungardhe:relate:importhandlers:organization:1.0">
+    <urn:Name>University of Southampton</urn:Name>
+    <urn:Description>The root organization.</urn:Description>
+    <urn:Root>true</urn:Root>
+  </urn:Organization>
+  <urn:Organization xmlns:urn="urn:sungardhe:relate:importhandlers:organization:1.0">
+    <urn:Name>Exams Awards and Graduation</urn:Name>
+    <urn:Description>SAA Team</urn:Description>
+    <urn:ParentIdentifier>University of Southampton</urn:ParentIdentifier>
+    <urn:Root>false</urn:Root>
+  </urn:Organization>
+  <urn:OrganizationAddressConfig xmlns:urn="urn:sungardhe:relate:communication:1.7">
+    <urn:OrganizationName>Exams Awards and Graduation</urn:OrganizationName>
+    <urn:EmailConfig>
+      <urn:DefaultFromAddress>results@soton.ac.uk</urn:DefaultFromAddress>
+      <urn:sender-named-ref>results_send</urn:sender-named-ref>
+      <urn:replyTo-named-ref>results_reply</urn:replyTo-named-ref>
+    </urn:EmailConfig>
+  </urn:OrganizationAddressConfig>
+  <urn:MailboxAccount xmlns:urn="urn:sungardhe:relate:communication:1.7" test="false">
+    <urn:Name>results_send</urn:Name>
+    <urn:MailboxAccountType>Sender</urn:MailboxAccountType>
+    <urn:Username>results</urn:Username>
+    <urn:EncryptedPassword>Ca6CAXu5xBq119ecFSU+iA==</urn:EncryptedPassword>
+    <urn:DisplayName>University of Southampton</urn:DisplayName>
+    <urn:EmailAddress>results@soton.ac.uk</urn:EmailAddress>
+  </urn:MailboxAccount>
+  <urn:MailboxAccount xmlns:urn="urn:sungardhe:relate:communication:1.7" test="false">
+    <urn:Name>results_reply</urn:Name>
+    <urn:MailboxAccountType>ReplyTo</urn:MailboxAccountType>
+    <urn:Username>resultsrp</urn:Username>
+    <urn:EncryptedPassword>Ca6CAXu5xBq119ecFSU+iA==</urn:EncryptedPassword>
+    <urn:DisplayName>University of Southampton</urn:DisplayName>
+    <urn:EmailAddress>reply-results@soton.ac.uk</urn:EmailAddress>
+  </urn:MailboxAccount>
+</objects>
